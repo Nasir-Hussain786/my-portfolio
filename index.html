@@ -7,16 +7,36 @@
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
 <body>
+
+    <div class="container mx-auto">
     <!-- ===== HEADER / NAVBAR ===== -->
-    <header class="container mt-6">
+    <header class="mt-6">
         <nav>
             <!-- Navigation links aligned to the right using flex and justify-end -->
-            <ul class="flex justify-end gap-15 [&>li>a]:transition-colors [&>li>a]:duration-300 [&>li>a:hover]:text-[#FF6464]">
+            <ul class="px-10 flex justify-end gap-15 [&>li>a]:transition-colors [&>li>a]:duration-300 [&>li>a:hover]:text-[#FF6464] [&>li>a]:font-bold">
                 <li><a href="#">Works</a></li>
                 <li><a href="#">Blog</a></li>
                 <li><a href="#">Contact</a></li>
             </ul>
         </nav>
     </header> 
+
+    <main>
+        <!-- ===== HERO SECTION ===== -->
+        <section class="flex items-center justify-between px-6 mt-25">
+            <article>
+                <h1 class="text-5xl font-bold">Hi, I am Nasir Hussain,</h1>
+                <h2 class="my-5 text-3xl font-bold">Frontend Developer</h2>
+                <p class="w-lg text-justify text-base mb-9">I have learned HTML, CSS, and Tailwind CSS, and have recently started covering the basics of JavaScript. I enjoy building clean and responsive web interfaces with modern tools.</p>
+                <a href="#" class="bg-[#FF6464] px-5 py-3 text-white font-medium rounded-xs">Download Resume</a>
+            </article>
+            <!-- Right side: profile picture -->
+            <figure>
+                <img src="./assets/my-profile-pic.jpg" alt="my profile picture"  class="w-3xs rounded-[50%]">
+            </figure>
+        </section>
+    </main>
+    </div>
+
 </body>
 </html>
