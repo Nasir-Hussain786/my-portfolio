@@ -9,12 +9,12 @@
 </head>
 <body>
 
-    <div class="container mx-auto">
+    <div class="container mx-auto px-10">
     <!-- ===== HEADER / NAVBAR ===== -->
     <header class="mt-6">
         <nav>
             <!-- Navigation links aligned to the right using flex and justify-end -->
-            <ul class="px-10 flex justify-end gap-15 [&>li>a]:transition-colors [&>li>a]:duration-300 [&>li>a:hover]:text-[#FF6464] [&>li>a]:font-medium [&>li>a]:text-lg">
+            <ul class="flex justify-end gap-15 px-12 [&>li>a]:transition-colors [&>li>a]:duration-300 [&>li>a:hover]:text-[#FF6464] [&>li>a]:font-medium [&>li>a]:text-lg">
                 <li><a href="#">Works</a></li>
                 <li><a href="#">Blog</a></li>
                 <li><a href="#">Contact</a></li>
@@ -24,7 +24,7 @@
 
     <main>
         <!-- ===== HERO SECTION ===== -->
-        <section class="flex items-center justify-between px-6 mt-25">
+        <section class="flex items-center justify-between p-10 mt-15">
             <article>
                 <h1 class="text-5xl font-bold">Hi, I am Nasir Hussain,</h1>
                 <h2 class="my-5 text-3xl font-bold">Frontend Developer</h2>
@@ -35,6 +35,33 @@
             <figure>
                 <img src="./assets/my-profile-pic.jpg" alt="my profile picture"  class="w-3xs rounded-[50%]">
             </figure>
+        </section>
+        <!-- ===== RECENT POSTS SECTION ===== -->
+        <section class="bg-[#EDF7FA] p-10 mt-10">
+            <header class="flex items-center justify-between py-4">
+                <h2 class="text-xl font-normal">Recent Posts</h2>
+                <a href="" class="text-[#00A8CC] text-base font-normal">View all</a>
+            </header>
+            <div class="flex justify-between w-auto">
+                <article class="p-6 bg-[#ffffff] rounded-sm">
+                    <h3 class="text-2xl font-bold w-sm mb-4">Making a design system from scratch</h3>
+                    <footer class="mb-3">
+                        <time datetime="2020-02-12" class="text-lg">12 Feb 2020</time>
+                        <span class="text-lg font-normal mx-2">|</span>
+                        <span class="text-lg font-normal">Design, Pattern</span>
+                    </footer>
+                    <p class="text-base font-normal text-justify w-sm">Building a design system helps maintain consistency across projects. It includes typography, colors, and reusable components.</p>
+                </article>
+                <article class="p-6 bg-[#ffffff] rounded-sm">
+                    <h3 class="text-2xl font-bold w-sm mb-4">Creating pixel perfect icons in Figma</h3>
+                    <footer class="mb-3">
+                        <time datetime="2020-02-12" class="text-lg">12 Feb 2020</time>
+                        <span class="text-lg font-normal mx-2">|</span>
+                        <span class="text-lg font-normal">Figma, Icon Design</span>
+                    </footer>
+                    <p class="text-base font-normal text-justify w-sm">Pixel perfect icons require attention to grid alignment and stroke consistency. Figma makes this process clean and efficient.</p>
+                </article>
+            </div>
         </section>
     </main>
     </div>
